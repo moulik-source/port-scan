@@ -43,7 +43,7 @@ try:
 	VERSION	= open("VERSION", "r").read().strip()
 except:
 	VERSION	= "unknown"
-	print("'VERSION' file not found, please re-clone : https://www.github.com/moulik-source/port-scan")
+	print("'VERSION' file not found, please re-clone : https://www.github.com/m57/piescan.git")
 
 VERBOSE 		= False
 VERBOSE_EXTRA 	= False
@@ -77,11 +77,9 @@ def signal_handler(sig, frame):
 	sys.exit(0)
 
 def banner():
-  
-                                                                                                 
 
 	print("")
-	print("\t  %portscan v%s%s -- %shttps://www.techyrick.com/blog" % ("\033[1;32m", VERSION, "\033[0m", "\033[1;31m", "\033[0m"))
+	print("\t  %spiescan v%s%s -- %shttps://www.techyrick.com/" % ("\033[1;32m", VERSION, "\033[0m", "\033[1;31m", "\033[0m"))
 	print("\t---------------------------------------------------")
 	print("\t    A simple, fast, lightweight TCP/UDP scanner")
 	print("")
